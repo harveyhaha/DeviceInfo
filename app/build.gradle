@@ -1,18 +1,8 @@
-import java.text.SimpleDateFormat
-
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-//    signingConfigs {
-//        keystore {
-//            storeFile file('F:\\AndroidWorkSpace\\DeviceInfo\\key.jks')
-//            storePassword '123456'
-//            keyAlias 'deviceinfo'
-//            keyPassword '123456'
-//        }
-//    }
     compileSdkVersion 30
     buildToolsVersion "30.0.1"
 
@@ -22,9 +12,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        resConfigs ''
     }
 
     buildTypes {
@@ -44,5 +32,4 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
 }
